@@ -1,0 +1,128 @@
+.cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to left bottom, #F2E3C6 0%, #A7A1A5 100%);
+}
+
+/* Home Screen Background Container */
+
+.app {
+  position: relative;
+  min-width: 850px;
+  height: 540px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Austin Texas Image */
+
+.app__bgimg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Home Background Image */
+
+.app__bgimg-image--1 {
+  background: url("http://viewfinderheart.com/wp-content/uploads/2018/02/M44A0598-1200x747.jpg") center center no-repeat;
+}
+
+/* Name, Title & Portfolio Link */
+
+.app__text {
+  position: absolute;
+  right: 165px;
+  top: 150px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Name */
+
+.app__text-line--4 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0A101D;
+}
+
+/* Title */
+
+.app__text-line--3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*Portfolio*/
+
+.app__text-line--2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0099CC;
+  padding-top: 5px;
+}
+
+/* Transform Properties for Name, Title, Portfolio */
+
+.app__text--1 .app__text-line {
+  -webkit-transform: translate3d(0, -125px, 0);
+          transform: translate3d(0, -125px, 0);
+  opacity: 0;
+}
+
+/* white background transformation */
+
+.app__img {
+  position: absolute;
+  -webkit-transform: translate3d(0, -750px, 0);
+          transform: translate3d(0, -750px, 0);
+  width: 850px;
+  height: 100%;
+  transition: -webkit-transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02), -webkit-transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  will-change: transform;
+}
+.app__img img {
+  min-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.initial .app__img {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+/* Controls Name, Title, and Portfolio Link Transformation */
+
+.initial .app__text--1 .app__text-line--2 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  transition: opacity 400ms 1675ms, -webkit-transform 1500ms 1475ms;
+  transition: transform 1500ms 1475ms, opacity 400ms 1675ms;
+  transition: transform 1500ms 1475ms, opacity 400ms 1675ms, -webkit-transform 1500ms 1475ms;
+  opacity: 1;
+}
+.initial .app__text--1 .app__text-line--3 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  transition: opacity 400ms 1750ms, -webkit-transform 1500ms 1550ms;
+  transition: transform 1500ms 1550ms, opacity 400ms 1750ms;
+  transition: transform 1500ms 1550ms, opacity 400ms 1750ms, -webkit-transform 1500ms 1550ms;
+  opacity: 1;
+}
+.initial .app__text--1 .app__text-line--4 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  transition: opacity 400ms 1825ms, -webkit-transform 1500ms 1625ms;
+  transition: transform 1500ms 1625ms, opacity 400ms 1825ms;
+  transition: transform 1500ms 1625ms, opacity 400ms 1825ms, -webkit-transform 1500ms 1625ms;
+  opacity: 1;
+}

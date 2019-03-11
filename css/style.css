@@ -5,6 +5,7 @@
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(to left bottom, #F2E3C6 0%, #A7A1A5 100%);
+  margin: 0px;
 }
 
 /* Home Screen Background Container */
@@ -23,8 +24,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
 }
 
 /* Home Background Image */
@@ -39,43 +38,51 @@
   position: absolute;
   right: 165px;
   top: 150px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair';
 }
-
 
 /* Name */
 
 .app__text-line--4 {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 400;
   color: #0A101D;
 }
 
-/* Title */
+/* Full Stack Developer Title */
 
 .app__text-line--3 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-/*Portfolio*/
+/*Portfolio Link*/
 
 .app__text-line--2 {
   font-size: 14px;
   font-weight: 500;
-  color: #0099CC;
-  padding-top: 5px;
+}
+
+a {
+  margin-top: 10px;
+}
+
+
+.btn-primary {
+  background: blue;
+  color: white;
+  border: none;
 }
 
 /* Transform Properties for Name, Title, Portfolio */
 
 .app__text--1 .app__text-line {
-  -webkit-transform: translate3d(0, -125px, 0);
-          transform: translate3d(0, -125px, 0);
+  -webkit-transform: translate3d(0, -150px, 0);
+          transform: translate3d(0, -150px, 0);
   opacity: 0;
 }
 
-/* white background transformation */
+/* White wave background transformation */
 
 .app__img {
   position: absolute;
@@ -90,17 +97,12 @@
 }
 .app__img img {
   min-width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 .initial .app__img {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
 }
 
-/* Controls Name, Title, and Portfolio Link Transformation */
+/* Name, Title, and Portfolio Text Transformation */
 
 .initial .app__text--1 .app__text-line--2 {
   -webkit-transform: translate3d(0, 0, 0);
